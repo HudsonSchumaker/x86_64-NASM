@@ -1,5 +1,5 @@
 # x86_64-NASM
-NASM Assembler codes for macOs
+NASM Assembler codes for macOS
 
 Let's start with registers and their assignments:
 
@@ -49,14 +49,36 @@ quadword     | 0 to 18.446.744.073.709.551.615 |  8   |    dq       |     resq  
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-MacOSx Syscalls:
-
-FreeBSD syscall | Syscall      | MacOSx value |
+macOS Syscalls values:
+https://opensource.apple.com/source/xnu/xnu-1504.3.12/bsd/kern/syscalls.master
+FreeBSD syscall | Syscall      | macOS value  |
 ----------------|--------------|--------------|
 1               | exit         | 0x02000001   |
 3               | read         | 0x02000003   |
 4               | write        | 0x02000004   |
 5               | open         | 0x02000005   | 
 6               | close        | 0x02000006   | 
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+macOS syscall open values:
+
+Flag name       | Value |
+----------------|-------|
+O_RDONLY        | 0     | 
+O_WRONLY        | 1     |
+O_RDWR          | 2     |
+O_CREAT         | 64    |
+O_APPEND        | 1024  |
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+macOS syscall open args:
+
+Syscall  | Id (RAX)   | 1st arg (RDI) | 2sd arg (RSI) | 3rd arg (RDX) | 4th arg | 5th arg | 5th arg |
+---------|------------|---------------|---------------|---------------|---------|---------|---------|
+open     | 0x02000005 | filename      | flags         | mode          |.        |.        |.        |
+
+
 
 
