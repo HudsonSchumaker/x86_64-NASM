@@ -57,6 +57,6 @@ FreeBSD syscall | Syscall      | MacOSx value |
 3               | read         | 0x2000003    |
 4               | write        | 0x2000004    |
 5               | open         | 0x2000005    | 
-6               | close        | 0x2000005    | 
+6               | close        | 0x2000006    | 
 
 
