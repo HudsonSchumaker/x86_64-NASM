@@ -88,6 +88,14 @@ read    | 0x02000003 | #filedescriptor | $buffer       | #count/len    |.      
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
+macOS syscall write args:
+
+Syscall | Id (RAX)   | 1st arg (RDI)   | 2sd arg (RSI) | 3rd arg (RDX) | 4th arg (RCX) | 5th arg (R8) | 6th arg (R9) |
+--------|------------|-----------------|---------------|---------------|---------------|--------------|--------------|
+write   | 0x02000004 | #filedescriptor | $buffer       | #count/len    |.              |.             |.             |
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
 macOS syscall close args:
 
 Syscall | Id (RAX)   | 1st arg (RDI)   | 2sd arg (RSI) | 3rd arg (RDX) | 4th arg (RCX) | 5th arg (R8) | 6th arg (R9) |
