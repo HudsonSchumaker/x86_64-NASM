@@ -100,7 +100,7 @@ macOS syscall exit args:
 
 Syscall | Id (RAX)   | 1st arg (RDI)   | 2sd arg (RSI) | 3rd arg (RDX) | 4th arg (RCX) | 5th arg (R8) | 6th arg (R9) |
 --------|------------|-----------------|---------------|---------------|---------------|--------------|--------------|
-exit    | 0x02000001 | #filedescriptor |.              |.              |.              |.             |.             |
+exit    | 0x02000001 | #exit code      |.              |.              |.              |.             |.             |
 
 
 
