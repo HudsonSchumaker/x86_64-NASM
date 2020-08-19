@@ -33,9 +33,8 @@ XMM3          | floating point, 4th argument                  | no  |.     |.   
 XMM4          | floating point, 5th argument                  | no  |.     |.     |.     |
 XMM5          | floating point, 6th argument                  | no  |.     |.     |.     |
 XMM6          | floating point, 7th argument                  | no  |.     |.     |.     |
-XMM7          | | no |.|.|.|
-XMM8          | | no |.|.|.|
-XMM9          | | no |.|.|.|
+...           |... |... |.|.|.|
+XMM15         | | no |.|.|.|
 
 -----------------------------------------------------------------------------------------------------------------------------------
 Data types:
