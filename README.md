@@ -48,7 +48,7 @@ quadword     | 0 to 18.446.744.073.709.551.615 |  8   |    dq       |     resq  
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
-macOS Syscalls values:  [syscalls.master](https://opensource.apple.com/source/xnu/xnu-1504.3.12/bsd/kern/syscalls.master).
+macOS Syscalls values:  [apple bsd syscalls.master](https://opensource.apple.com/source/xnu/xnu-1504.3.12/bsd/kern/syscalls.master).
 
 FreeBSD syscall | Syscall      | macOS value |
 ----------------|--------------|-------------|
@@ -92,7 +92,7 @@ macOS syscall read args:
 
 Syscall | Id (RAX)   | 1st arg (*RDI*) | 2sd arg (*RSI*) | 3rd arg (*RDX*) | 4th arg (RCX) | 5th arg (R8) | 6th arg (R9) |
 --------|------------|-----------------|-----------------|-----------------|---------------|--------------|--------------|
-read    | 0x02000003 | #filedescriptor | $buffer         | #count/len      |.              |.             |.             |
+read    | 0x02000003 | #filedescriptor | $buffer         | #count/length   |.              |.             |.             |
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
@@ -100,7 +100,7 @@ macOS syscall write args:
 
 Syscall | Id (RAX)   | 1st arg (*RDI*) | 2sd arg (*RSI*) | 3rd arg (*RDX*) | 4th arg (RCX) | 5th arg (R8) | 6th arg (R9) |
 --------|------------|-----------------|-----------------|-----------------|---------------|--------------|--------------|
-write   | 0x02000004 | #filedescriptor | $buffer         | #count/len      |.              |.             |.             |
+write   | 0x02000004 | #filedescriptor | $buffer         | #count/length   |.              |.             |.             |
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
