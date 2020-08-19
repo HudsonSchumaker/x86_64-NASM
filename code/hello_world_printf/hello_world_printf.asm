@@ -6,7 +6,7 @@
 extern _printf                        ; external function of C 
 section .data                         ; your data here
     msg:    db   "hello, world!", 0x0 ; in c "string" ends with 0
-    fmtstr: db.  "%s", 0xA, 0x0       ; format for printing a string
+    fmtstr: db   "%s", 0xA, 0x0       ; format for printing a string
 
 section .text   ; your code here
     global _main
