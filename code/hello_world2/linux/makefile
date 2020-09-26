@@ -5,3 +5,4 @@ all:
 
 clear:
 	rm *.o
+
