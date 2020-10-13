@@ -34,6 +34,6 @@ XMM15         |.   | no |.|.|.|
 -----------------------------------------------------------------------------------------------------------------------------------
 
 Example:
-func(int a, double b, int c, float d, int e, float f);
+func(int a, double b, int c, float d, int e, float f); <br>
 a in RCX, b in XMM1, c in R8, d in XMM3, f then e pushed on stack
 
