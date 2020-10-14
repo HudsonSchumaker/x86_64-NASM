@@ -5,7 +5,7 @@ Let's start with registers and their assignments:
 
 Name 64 bit   | Assignments                         | Preserved across function calls |
 --------------|-------------------------------------|---------------------------------|
-RAX           | **return register**,                | volatile                        |
+RAX           | **return register**                 | volatile                        |
 RBX           |                                     | ?                               | 
 RDI           |                                     | ?                               | 
 RSI           |                                     | ?                               | 
