@@ -5,18 +5,18 @@ Let's start with registers and their assignments:
 
 Name 64 bit   | Assignments                         | Preserved across function calls |
 --------------|-------------------------------------|---------------------------------|
-RAX           | **return register**                 | volatile                        |
+RAX           | **return register**                 | Volatile                        |
 RBX           |                                     | ?                               | 
 RDI           |                                     | ?                               | 
-RSI           |                                     | ?                               | 
-RCX           | **1rd argument**                    | volatile                        | 
-RDX           | **2th argument**                    | volatile                        | 
+RSI           |                                     | Nonvolatile                     | 
+RCX           | **1rd argument**                    | Volatile                        | 
+RDX           | **2th argument**                    | Volatile                        | 
 RBP           |                                     | ?                               | 
 RSP           | Stack pointer                       | Nonvolatile                     | 
-R8            | **3th argument**                    | volatile                        |
-R9            | **4th arguemnt**                    | volatile                        |
-R10           |                                     | volatile                        |
-R11           |                                     | volatile                        |
+R8            | **3th argument**                    | Volatile                        |
+R9            | **4th arguemnt**                    | Volatile                        |
+R10           |                                     | Volatile                        |
+R11           |                                     | Volatile                        |
 ...           | ...                                 | ...                             |
 R15           |                                     | ?                               | 
 
