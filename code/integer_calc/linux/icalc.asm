@@ -117,10 +117,10 @@ main:
 		mov	rax, 0
 		call 	printf
 ; divide---------------------------------------------------------------------
-	mov		rax, [number1]
+	mov	rax, [number1]
  	mov     rdx, 0			; rdx needs to be 0 before idiv
 	idiv	qword [number2]		; divide rax by number2, modulo in rdx
-	mov		[resulti], rax
+	mov	[resulti], rax
   	mov     [modulo], rdx	; rdx to modulo
 	; displaying the result
         mov	rdi, fmtint
