@@ -7,7 +7,7 @@ Name 64 bit   | Assignments                         | Preserved across function 
 --------------|-------------------------------------|---------------------------------|
 RAX           | **return register**                 | Volatile                        |
 RBX           |                                     | ?                               | 
-RDI           |                                     | ?                               | 
+RDI           |                                     | Nonvolatile                     | 
 RSI           |                                     | Nonvolatile                     | 
 RCX           | **1rd argument**                    | Volatile                        | 
 RDX           | **2th argument**                    | Volatile                        | 
