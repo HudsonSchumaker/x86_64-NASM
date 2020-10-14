@@ -12,7 +12,7 @@ RSI           |                                     | ?                         
 RCX           | **1rd argument**                    | volatile                        | 
 RDX           | **2th argument**                    | volatile                        | 
 RBP           |                                     | ?                               | 
-RSP           |                                     | ?                               | 
+RSP           | Stack pointer                       | Nonvolatile                     | 
 R8            | **3th argument**                    | volatile                        |
 R9            | **4th arguemnt**                    | volatile                        |
 R10           |                                     | volatile                        |
