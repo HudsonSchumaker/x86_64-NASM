@@ -61,21 +61,21 @@ main:
 	inc	rax			; increment rax with 1
 	mov	[resulti], rax
 	; displaying the result
-		mov	rdi, fmtint
-		mov	rsi, inci
-		mov	rdx, [resulti]
-		mov	rax, 0
-		call printf
+	mov	rdi, fmtint
+	mov	rsi, inci
+	mov	rdx, [resulti]
+	mov	rax, 0
+	call printf
 ; decrementing-----------------------------------------------------------------
 	mov	rax, [number1]
 	dec	rax			; decrement rax with 1
         mov	[resulti], rax
 	; displaying the result
-		mov	rdi, fmtint
-		mov	rsi, deci
-		mov	rdx, [resulti]
-		mov	rax, 0
-		call printf
+	mov	rdi, fmtint
+	mov	rsi, deci
+	mov	rdx, [resulti]
+	mov	rax, 0
+	call printf
 ; shift arithmetic left------------------------------------------------------
 	mov	rax, [number1]
 	sal	rax, 2			; multiply rax by 4
@@ -91,31 +91,31 @@ main:
 	sar	rax, 2			; divide rax by 4
 	mov	[resulti], rax
 	; displaying the result
-		mov	rdi, fmtint
-		mov	rsi, sari
-		mov	rdx, [resulti]
-		mov	rax, 0
-		call 	printf
+	mov	rdi, fmtint
+	mov	rsi, sari
+	mov	rdx, [resulti]
+	mov	rax, 0
+	call 	printf
 ; shift arithmetic right with sign extension ---------------------------------
 	mov	rax, [neg_num]
 	sar	rax, 2			; divide rax by 4
 	mov	[resulti], rax
 	; displaying the result
-		mov	rdi, fmtint
-		mov	rsi, sariex
-		mov	rdx, [resulti]
-		mov	rax, 0
-		call 	printf
+	mov	rdi, fmtint
+	mov	rsi, sariex
+	mov	rdx, [resulti]
+	mov	rax, 0
+	call 	printf
 ; multiply-------------------------------------------------------------------
 	mov		rax, [number1]
 	imul	qword [number2]		; multiply rax with number2
 	mov		[resulti], rax
 	; displaying the result
-		mov	rdi, fmtint
-		mov	rsi, multi
-		mov	rdx, [resulti]
-		mov	rax, 0
-		call 	printf
+	mov	rdi, fmtint
+	mov	rsi, multi
+	mov	rdx, [resulti]
+	mov	rax, 0
+	call 	printf
 ; divide---------------------------------------------------------------------
 	mov	rax, [number1]
  	mov     rdx, 0			; rdx needs to be 0 before idiv
@@ -124,15 +124,15 @@ main:
   	mov     [modulo], rdx	; rdx to modulo
 	; displaying the result
         mov	rdi, fmtint
-		mov	rsi, divi
-		mov	rdx, [resulti]
-		mov	rax, 0
-		call 	printf
-		mov	rdi, fmtint
-		mov	rsi, remi
-		mov	rdx, [modulo]
-		mov	rax, 0
-		call 	printf      
+	mov	rsi, divi
+	mov	rdx, [resulti]
+	mov	rax, 0
+	call 	printf
+	mov	rdi, fmtint
+	mov	rsi, remi
+	mov	rdx, [modulo]
+	mov	rax, 0
+	call 	printf      
 mov rsp,rbp
 pop rbp
 ret
