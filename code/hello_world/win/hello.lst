@@ -1,0 +1,23 @@
+     1                                  ; hello.asm
+     2                                  extern printf
+     3                                  	section .data
+     4 00000000 48656C6C6F2C205769-     msg		db 	'Hello, Windows World!',0
+     4 00000009 6E646F777320576F72-
+     4 00000012 6C642100           
+     5 00000016 57696E646F77732031-     fmt     db 	"Windows 10 says: %s",10,0
+     5 0000001F 3020736179733A2025-
+     5 00000028 730A00             
+     6                                  	section .text
+     7                                  	global main
+     8                                  main:
+     9 00000000 55                      push	rbp
+    10 00000001 4889E5                  mov 	rbp,rsp   
+    11 00000004 48B9-                   	mov		rcx, fmt 
+    11 00000006 [1600000000000000] 
+    12 0000000E 48BA-                   	mov     rdx, msg
+    12 00000010 [0000000000000000] 
+    13 00000018 4883EC20                	sub     rsp,32
+    14 0000001C E8(00000000)            	call	printf
+    15 00000021 4883C420                	add     rsp,32 
+    16 00000025 C9                      leave
+    17 00000026 C3                      ret
