@@ -27,12 +27,12 @@ R15           | callee-saved register               | *yes*                     
 Name 128 bit  | Assignments                                       | Preserved across function calls | 32 bit | 16 bit | 8 bit |
 --------------|---------------------------------------------------|---------------------------------|--------|--------|-------|
 XMMO          | floating point, 1st argument, **return register** | no  |      |      |      |
-XMM1          | floating point, 2sd argument                  | no  |.     |.     |.     |
-XMM2          | floating point, 3rd argument                  | no  |.     |.     |.     |
-XMM3          | floating point, 4th argument                  | no  |.     |.     |.     |
-XMM4          | floating point, 5th argument                  | no  |.     |.     |.     |
-XMM5          | floating point, 6th argument                  | no  |.     |.     |.     |
-XMM6          | floating point, 7th argument                  | no  |.     |.     |.     |
+XMM1          | floating point, 2sd argument                      | no  |.     |.     |.     |
+XMM2          | floating point, 3rd argument                      | no  |.     |.     |.     |
+XMM3          | floating point, 4th argument                      | no  |.     |.     |.     |
+XMM4          | floating point, 5th argument                      | no  |.     |.     |.     |
+XMM5          | floating point, 6th argument                      | no  |.     |.     |.     |
+XMM6          | floating point, 7th argument                      | no  |.     |.     |.     |
 ...           |... |... |.|.|.|
 XMM15         | | no |.|.|.|
 
