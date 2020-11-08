@@ -13,11 +13,11 @@ RDX           | **3rd argument**                    | no                        
 RCX           | **4th argument**                    | no                              | ECX    | CX     | CL |
 RBP           | callee-saved register               | *yes*                           | EBP    | BP     | BPl |
 RSP           | stack pointer                       | *yes*                           | ESP    | SP     | SPL |
-R8            | **5th argument**                    | no                              | R8D    | R8W | R8B |
-R9            | **6th arguemnt**                    | no                              | R9D    | R9W | R9B |
-R10           | temporary register                  | no                              | R10D   | R10W | R10B |
-R11           | temporary register                  | no                              | R11D   | R11W | R11B |
-R12           | callee-saved register               | *yes*                           | R12D   | R12W | R12B |
+R8            | **5th argument**                    | no                              | R8D    | R8W    | R8B |
+R9            | **6th arguemnt**                    | no                              | R9D    | R9W    | R9B |
+R10           | temporary register                  | no                              | R10D   | R10W   | R10B |
+R11           | temporary register                  | no                              | R11D   | R11W   | R11B |
+R12           | callee-saved register               | *yes*                           | R12D   | R12W   | R12B |
 R13           | callee-saved register               | *yes*                           | R13D   | R13W | R13B |
 R14           | callee-saved register               | *yes*                           | R14D   | R14W | R14B |
 R15           | callee-saved register               | *yes*                           | R15D   | R15W | R15B |
