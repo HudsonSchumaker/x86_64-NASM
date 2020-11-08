@@ -9,10 +9,10 @@ RAX           | **return register**, syscall number | no                        
 RBX           | callee-saved register               | *yes*                           | EBX    | BX     | BL    |
 RDI           | **1st argument**                    | no                              | EDI    | DI     | DIL   |
 RSI           | **2nd argument**                    | no                              | ESI    | SI     | SIL   |
-RDX           | **3rd argument**                    | no                              | EDX    | DX | DL |
-RCX           | **4th argument**                    | no                              | ECX    | CX | CL |
-RBP           | callee-saved register               | *yes*                           | EBP    | BP | BPl |
-RSP           | stack pointer                       | *yes*                           | ESP    | SP | SPL |
+RDX           | **3rd argument**                    | no                              | EDX    | DX     | DL |
+RCX           | **4th argument**                    | no                              | ECX    | CX     | CL |
+RBP           | callee-saved register               | *yes*                           | EBP    | BP     | BPl |
+RSP           | stack pointer                       | *yes*                           | ESP    | SP     | SPL |
 R8            | **5th argument**                    | no                              | R8D    | R8W | R8B |
 R9            | **6th arguemnt**                    | no                              | R9D    | R9W | R9B |
 R10           | temporary register                  | no                              | R10D   | R10W | R10B |
