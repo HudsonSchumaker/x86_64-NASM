@@ -3,7 +3,6 @@
 ; Hudson Schumaker
 
 bits 64
-
 extern printf
 section .data							
 	number1	dq	128	; the numbers to be used to 					
