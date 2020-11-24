@@ -41,6 +41,6 @@ _o3inc:
   ret            ; return, rax has the result
 
 _o3dec:
-  mov  rax, rdi
-  dec  rax
-  ret
+  mov  rax, rdi ; 1st arg, moved to rax
+  dec  rax      ; decrement in 1 (--)    
+  ret          ; return, rax has the result
