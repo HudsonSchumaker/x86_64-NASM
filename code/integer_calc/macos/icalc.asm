@@ -36,9 +36,9 @@ _o3div:
   ret            ; return, rax has the result
   
 _o3inc:
-  mov  rax, rdi ; 1st arg, moved to rax
-  inc  rax      ; increment in 1 (++)
-  ret           ; return, rax has the result
+  mov  rax, rdi  ; 1st arg, moved to rax
+  inc  rax       ; increment in 1 (++)
+  ret            ; return, rax has the result
 
 _o3dec:
   mov  rax, rdi
