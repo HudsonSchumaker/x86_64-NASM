@@ -7,7 +7,7 @@ bits 64
 section .data
 section .bss
 section .text
-  global _o3add, _o3sub, _o3mult, _o3pow, _o3div ; entry points
+  global _o3add, _o3sub, _o3mult, _o3pow, _o3div, _o3inc, _o3dec ; entry points
 
 _o3add:
   mov	 rax, rdi  ; 1st arg, moved to rax
@@ -36,9 +36,9 @@ _o3div:
   ret            ; return, rax has the result
   
 _o3inc:
-  mov  rax, rdi
-  inc  rax
-  ret
+  mov  rax, rdi ; 1st arg, moved to rax
+  inc  rax      ; increment in 1 (++)
+  ret           ; return, rax has the result
 
 _o3dec:
   mov  rax, rdi
