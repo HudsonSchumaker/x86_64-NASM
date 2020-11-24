@@ -34,3 +34,13 @@ _o3div:
   mov  rdx, 0    ; rdx needs to be 0 before idiv
   idiv rsi       ; 2sd arg, divide rax(rdi value) by rsi
   ret            ; return, rax has the result
+  
+_o3inc:
+  mov  rax, rdi
+  inc  rax
+  ret
+
+_o3dec:
+  mov  rax, rdi
+  dec  rax
+  ret
