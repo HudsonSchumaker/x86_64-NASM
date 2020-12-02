@@ -23,10 +23,10 @@ main:
 ;);
 
     mov     rcx, STD_OUTPUT_HANDLE
-    sub     rsp,32          	;shadowspace
-	  call    GetStdHandle		;returns INVALID_HANDLE_VALUE if no success
-    add	    rsp,32
-    mov     qword[hFile],rax 	;save received handle to memory
+    sub     rsp, 32          	;shadowspace
+    call    GetStdHandle	;returns INVALID_HANDLE_VALUE if no success
+    add	    rsp, 32
+    mov     qword[hFile], rax 	;save received handle to memory
 
 ;BOOL WINAPI WriteConsole(
 ;  _In_			HANDLE 	hConsoleOutput,
@@ -46,9 +46,9 @@ main:
 	add     rsp, 32+8
 
 ; BOOL WriteFile(
-;		HANDLE      	hFile,
-;		LPCVOID     	lpBuffer,
-;  		DWORD       	nNumberOfBytesToWrite,
+;	HANDLE      	hFile,
+;	LPCVOID     	lpBuffer,
+;  	DWORD       	nNumberOfBytesToWrite,
 ;    	LPDWORD     	lpNumberOfBytesWritten,
 ;   	LPOVERLAPPED    lpOverlapped
 ;);
