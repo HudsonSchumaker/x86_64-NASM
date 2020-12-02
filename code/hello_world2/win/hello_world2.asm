@@ -4,11 +4,11 @@
 	extern GetStdHandle
 
 section .data
-	msg		db 	'Hello, World!!',10,0
-	msglen	EQU	$-msg-1		; leave off the NULL
+	msg		db 	'Hello, World!!', 10, 0
+	msglen	EQU	$-msg-1		   ; leave off the NULL
 
 section .bss
-	hFile                   resq	1	; handle to file
+	hFile                   resq	1  ; handle to file
 	lpNumberOfBytesWritten  resq	1
 
 section .text
@@ -35,12 +35,12 @@ main:
 ;  _Out_		LPDWORD	lpNumberOfCharsWritten,
 ;  _Reserved_ 	LPVOID 	lpReserved
 ;);
-	sub		rsp, 8				;align the stack
+	sub	rsp, 8			;align the stack
 	mov     rcx, qword[hFile]
 	lea     rdx, [msg]      	;lpBuffer
 	mov     r8, msglen       	;nNumberOfBytesToWrite
 	lea     r9, [lpNumberOfBytesWritten] 
-	push    NULL                ;lpReserved
+	push    NULL                    ;lpReserved
 	sub     rsp, 32         
 	call    WriteConsoleA    	;returns nonzero if success
 	add     rsp, 32+8
@@ -58,7 +58,7 @@ main:
 	mov     r8, msglen       	;nNumberOfBytesToWrite
 	lea     r9, [lpNumberOfBytesWritten] 
 	push 	NULL              	;lpOverlapped
-	sub     rsp,32
+	sub     rsp, 32
 	call    WriteFile     		;returns nonzero of success
 leave
 ret
