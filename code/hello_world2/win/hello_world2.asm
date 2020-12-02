@@ -14,8 +14,8 @@ section .bss
 section .text
 	global main
 main:
-  push	rbp
-  mov		rbp,rsp
+  	push	rbp
+  	mov	rbp, rsp
          
 ; get a handle to stdout
 ;HANDLE WINAPI GetStdHandle(
