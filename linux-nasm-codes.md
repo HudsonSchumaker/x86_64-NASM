@@ -48,7 +48,7 @@ quadword     | 0 to 18.446.744.073.709.551.615 |  8   |    dq       |     resq  
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
-macOS Syscalls values:  [linux-syscall-table](https://filippo.io/linux-syscall-table/).
+Linux Syscalls values: [linux-syscall-table](https://filippo.io/linux-syscall-table/).
 
 Id (*RAX*)  | Name   | Entry point |
 ------------|--------|-------------|
