@@ -7,6 +7,7 @@ extern _o3prtInt, _o3prt
 section .data
   x dd 0
   y dd 1000
+  fmtstr: db   "%s", 0xA, 0x0       ; format for printing a string, "\n" and end the "string"
 
 section .text
   global _main
