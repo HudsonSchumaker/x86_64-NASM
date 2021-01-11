@@ -1,3 +1,7 @@
+; hello_world.asm
+; prints hello, world! using syscall
+; Hudson Schumaker
+
 bits 64
 
 section .data
