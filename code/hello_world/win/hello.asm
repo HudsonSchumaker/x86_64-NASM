@@ -1,4 +1,6 @@
-; hello.asm
+; hello_world.asm
+; prints hello, world! using syscall
+; Hudson Schumaker
 extern printf
 	section .data
 msg	db 	'Hello, Windows World!',0
@@ -8,7 +10,7 @@ fmt     db 	"Windows 10 says: %s",10,0
 main:
 push	rbp
 mov 	rbp,rsp   
-	mov		rcx, fmt 
+	mov	rcx, fmt 
 	mov     rdx, msg
 	sub     rsp,32
 	call	printf
