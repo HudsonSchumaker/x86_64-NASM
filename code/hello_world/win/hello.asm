@@ -9,8 +9,8 @@ fmt     db 	"Windows 10 says: %s",10,0
 	section .text
 	global main
 main:
-push	rbp
-mov 	rbp,rsp   
+	push	rbp
+	mov 	rbp,rsp   
 	mov	rcx, fmt 
 	mov     rdx, msg
 	sub     rsp,32
