@@ -23,10 +23,10 @@ main:
 ;);
 
     mov     rcx, STD_OUTPUT_HANDLE
-    sub     rsp, 32          	;shadowspace
-    call    GetStdHandle	;returns INVALID_HANDLE_VALUE if no success
+    sub     rsp, 32          	; shadowspace
+    call    GetStdHandle	; returns INVALID_HANDLE_VALUE if no success
     add	    rsp, 32
-    mov     qword[hFile], rax 	;save received handle to memory
+    mov     qword[hFile], rax 	; save received handle to memory
 
 ;BOOL WINAPI WriteConsole(
 ;  _In_			HANDLE 	hConsoleOutput,
@@ -35,14 +35,14 @@ main:
 ;  _Out_		LPDWORD	lpNumberOfCharsWritten,
 ;  _Reserved_ 	LPVOID 	lpReserved
 ;);
-	sub	rsp, 8			;align the stack
+	sub	rsp, 8			; align the stack
 	mov     rcx, qword[hFile]
-	lea     rdx, [msg]      	;lpBuffer
-	mov     r8, msglen       	;nNumberOfBytesToWrite
+	lea     rdx, [msg]      	; lpBuffer
+	mov     r8, msglen       	; nNumberOfBytesToWrite
 	lea     r9, [lpNumberOfBytesWritten] 
-	push    NULL                    ;lpReserved
+	push    NULL                    ; lpReserved
 	sub     rsp, 32         
-	call    WriteConsoleA    	;returns nonzero if success
+	call    WriteConsoleA    	; returns nonzero if success
 	add     rsp, 32+8
 
 ; BOOL WriteFile(
@@ -54,12 +54,12 @@ main:
 ;);
 
 	mov     rcx, qword[hFile]  	; file handle 
-	lea     rdx, [msg]      	;lpBuffer
-	mov     r8, msglen       	;nNumberOfBytesToWrite
+	lea     rdx, [msg]      	; lpBuffer
+	mov     r8, msglen       	; nNumberOfBytesToWrite
 	lea     r9, [lpNumberOfBytesWritten] 
-	push 	NULL              	;lpOverlapped
+	push 	NULL              	; lpOverlapped
 	sub     rsp, 32
-	call    WriteFile     		;returns nonzero of success
+	call    WriteFile     		; returns nonzero of success
 leave
 ret
 
