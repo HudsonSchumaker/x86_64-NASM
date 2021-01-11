@@ -9,9 +9,9 @@ section .data
 	msg2	db	"Yes, I am here!",0	
 	radius	dd	357	
 	pi		dq	3.14
-	fmtstr	db	"%s",10,0 ;format for printing a string	
-	fmtflt	db	"%lf",10,0 ;format for a float
-	fmtint	db	"%d",10,0 ;format for an integer 
+	fmtstr	db	"%s",10,0  ; format for printing a string	
+	fmtflt	db	"%lf",10,0 ; format for a float
+	fmtint	db	"%d",10,0  ; format for an integer 
 section .bss	
 section .text	
 extern	_printf	
