@@ -10,15 +10,15 @@ section .bss
 section .text							
 	global 	main						
 main:
-    mov rbp, rsp; for correct debugging
+        mov rbp, rsp            ; for correct debugging
 	push	rbp
 	mov	rbp,rsp
 	mov 	rax, [number1]	; move the numbers into registers
 	mov 	rbx, [number2]
 	cmp 	rax,rbx		; compare rax and rbx
 	jge 	greater		; rax greater or equal go to greater:
-mov	rdi,fmt2		; rax is smaller, continue here
-mov	rax,0			; no xmm involved
+        mov	rdi, fmt2	; rax is smaller, continue here
+        mov	rax, 0	        ; no xmm involved
 	call 	printf		; display fmt2
 	jmp 	exit		; jump to label exit:
 greater:
