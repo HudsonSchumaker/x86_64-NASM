@@ -10,11 +10,11 @@ fmt     db 	"Windows 10 says: %s",10,0
 	global main
 main:
 	push	rbp
-	mov 	rbp,rsp   
+	mov 	rbp, rsp   
 	mov	rcx, fmt 
 	mov     rdx, msg
-	sub     rsp,32
+	sub     rsp, 32
 	call	printf
-	add     rsp,32 
-leave
-ret
+	add     rsp, 32 
+        leave
+        ret
