@@ -120,7 +120,7 @@ main:
  	mov     rdx, 0			; rdx needs to be 0 before idiv
 	idiv	qword [number2]		; divide rax by number2, modulo in rdx
 	mov	[resulti], rax
-  	mov     [modulo], rdx	; rdx to modulo
+  	mov     [modulo], rdx	        ; rdx to modulo
 	; displaying the result
         mov	rdi, fmtint
 	mov	rsi, divi
