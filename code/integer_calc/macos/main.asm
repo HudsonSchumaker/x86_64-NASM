@@ -42,7 +42,7 @@ _main:
    call  _o3mult      ; call extern function o3mult, return will be in rax
 
    mov   rsi, rax     ; 2sd arg for printf, rax has the return value
-   mov	 rax, 0		    ; no floating point
+   mov	 rax, 0       ; no floating point
    mov	 rdi, fmtint  ; 1st arg, format for printf
    call	 _printf      ; call printf no return
 
