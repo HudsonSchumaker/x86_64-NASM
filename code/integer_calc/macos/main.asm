@@ -51,7 +51,7 @@ _main:
    call  _o3pow       ; call extern function o3pow, return will be in rax
 
    mov   rsi, rax     ; 2sd arg, value for be printed
-   mov	 rax, 0		    ; no floating point
+   mov	 rax, 0	      ; no floating point
    mov	 rdi, fmtint  ; 1st arg, format for printf
    call	 _printf      ; call printf no return
 
