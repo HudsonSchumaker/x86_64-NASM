@@ -6,7 +6,7 @@
 bits 64
 
 section .data
-	msg db  "Hello World Fedora 32 from nasm", 0x0
+	msg db  "Hello World from nasm", 0x0
 	len equ	$ - msg 
 
 section .bss
