@@ -28,7 +28,7 @@ _main:
 _out:
     mov     rax, 1       ; one xmm register used
     mov     rdi, fmtstr  ; 1st arg : format
-   ;        xmm0,        ; 2sd arg : xmm0 with the return value
+    ;       xmm0,        ; 2sd arg : xmm0 with the return value
     call    _printf      ; call c function with args
 
 _exit:
