@@ -12,9 +12,9 @@ section .data
 section .bss
 
 section .text
-        global main
+        global _start
 
-main:
+_start:
 	mov  rax, 1
 	mov  rdi, 1
 	mov  rsi, msg
