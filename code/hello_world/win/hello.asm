@@ -1,7 +1,7 @@
 ; hello_world.asm
 ; prints hello, world! using syscall
 ; Hudson Schumaker
-; SchumakerTeam Lab 
+; SchumakerTeam Lab
 
 extern printf
 	section .data
