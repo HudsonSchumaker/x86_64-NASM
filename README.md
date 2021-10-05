@@ -6,7 +6,7 @@ Nasm manual: [nasm](https://www.nasm.us/doc/).
 Your First Few Instructions
 There are hundreds of instructions. You can’t learn them all at once. Just start with these:
 
-mov x, y &nbsp;  x ← y       
+mov x, y &nbsp;&nbsp;&nbsp;  x ← y       
 and x, y      x ← x and y   
 or  x, y      x ← x or  y  
 xor x, y    x ← x xor y  
