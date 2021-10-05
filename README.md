@@ -8,7 +8,7 @@ There are hundreds of instructions. You can’t learn them all at once. Just sta
 
 mov x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← y       
 and x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← x and y   
-or  x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← x or  y  
+or  x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← x or  y  
 xor x, y    x ← x xor y  
 add x, y    x ← x + y   
 sub x, y    x ← x – y   
