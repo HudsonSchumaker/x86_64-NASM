@@ -12,7 +12,7 @@ or  x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← x or
 xor x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x ← x xor y  
 add x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← x + y   
 sub x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← x – y   
-inc x	      x ← x + 1  
+inc x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	      x ← x + 1  
 dec x	      x ← x – 1  
 syscall	Invoke an operating system routine  
 db	    A pseudo-instruction that declares bytes that will be in memory when the program runs
