@@ -10,7 +10,7 @@ mov x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← y
 and x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← x and y   
 or  x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← x or  y  
 xor x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x ← x xor y  
-add x, y    x ← x + y   
+add x, y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← x + y   
 sub x, y    x ← x – y   
 inc x	      x ← x + 1  
 dec x	      x ← x – 1  
