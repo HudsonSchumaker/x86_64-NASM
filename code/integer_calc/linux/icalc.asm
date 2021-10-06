@@ -50,7 +50,7 @@ main:
 	sub	rax, [number2]		; subtract number2 from rax
 	mov	[resulti], rax
 	; displaying the result
-		mov	rdi, fmtint
+	mov	rdi, fmtint
 		mov	rsi, difi
 		mov	rdx, [resulti]
 		mov	rax, 0
