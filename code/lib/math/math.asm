@@ -20,7 +20,7 @@ _subi:
   ret
 
 _multi:
-  mov	 rax, rdi
+  mov	  rax, rdi
   imul rsi
   ret
 
