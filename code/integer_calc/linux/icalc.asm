@@ -54,7 +54,7 @@ main:
 	mov	rsi, difi
 	mov	rdx, [resulti]
 	mov	rax, 0
-		call printf
+	call printf
 ; incrementing----------------------------------------------------------------- 
 	mov	rax, [number1]
 	inc	rax			; increment rax with 1
