@@ -40,7 +40,7 @@ main:
 	add	rax, [number2]		; add number2 to rax
 	mov	[resulti], rax		; move sum to result
 	; displaying the result
-		mov	rdi, fmtint
+	mov	rdi, fmtint
 		mov	rsi, sumi
 		mov	rdx, [resulti]
 		mov	rax, 0
