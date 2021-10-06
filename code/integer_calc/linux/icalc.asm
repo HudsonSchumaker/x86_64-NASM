@@ -32,7 +32,7 @@ main:
 ; displaying the numbers
 	mov	rdi, fmt
 	mov	rsi, [number1]
-		mov	rdx, [number2]
+	mov	rdx, [number2]
 		mov	rax, 0
 		call printf
 ; adding---------------------------------------------------------------------
