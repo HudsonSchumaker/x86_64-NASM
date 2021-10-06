@@ -1,5 +1,7 @@
 ; Hudson Schumaker
 ;
+;
+
 extern printf
 section .data							
 	number1	dq	42					
