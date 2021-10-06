@@ -34,7 +34,7 @@ main:
 	mov	rsi, [number1]
 	mov	rdx, [number2]
 	mov	rax, 0
-		call printf
+	call printf
 ; adding---------------------------------------------------------------------
 	mov	rax, [number1]
 	add	rax, [number2]		; add number2 to rax
