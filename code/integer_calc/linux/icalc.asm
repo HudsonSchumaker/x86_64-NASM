@@ -43,7 +43,7 @@ main:
 	mov	rdi, fmtint
 	mov	rsi, sumi
 	mov	rdx, [resulti]
-		mov	rax, 0
+	mov	rax, 0
 		call printf
 ; substracting---------------------------------------------------------------
 	mov	rax, [number1]
