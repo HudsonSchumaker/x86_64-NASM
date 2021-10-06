@@ -52,7 +52,7 @@ main:
 	; displaying the result
 	mov	rdi, fmtint
 	mov	rsi, difi
-		mov	rdx, [resulti]
+	mov	rdx, [resulti]
 		mov	rax, 0
 		call printf
 ; incrementing----------------------------------------------------------------- 
