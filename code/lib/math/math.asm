@@ -1,6 +1,6 @@
 ; O3 Ozone Project Lab
 ; math.asm - math functions for integers
-; Created by Hudson Schumaker on 07.09.20.
+; Created by Hudson Schumaker on 07.09.20
 
 bits 64
 section .data
