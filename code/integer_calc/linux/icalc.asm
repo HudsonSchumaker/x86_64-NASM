@@ -44,7 +44,7 @@ main:
 	mov	rsi, sumi
 	mov	rdx, [resulti]
 	mov	rax, 0
-		call printf
+	call printf
 ; substracting---------------------------------------------------------------
 	mov	rax, [number1]
 	sub	rax, [number2]		; subtract number2 from rax
