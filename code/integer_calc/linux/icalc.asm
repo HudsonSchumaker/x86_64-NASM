@@ -53,7 +53,7 @@ main:
 	mov	rdi, fmtint
 	mov	rsi, difi
 	mov	rdx, [resulti]
-		mov	rax, 0
+	mov	rax, 0
 		call printf
 ; incrementing----------------------------------------------------------------- 
 	mov	rax, [number1]
