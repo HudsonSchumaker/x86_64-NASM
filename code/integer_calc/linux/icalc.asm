@@ -30,7 +30,7 @@ main:
 	push	rbp
 	mov 	rbp,rsp
 ; displaying the numbers
-		mov	rdi, fmt
+	mov	rdi, fmt
 		mov	rsi, [number1]
 		mov	rdx, [number2]
 		mov	rax, 0
