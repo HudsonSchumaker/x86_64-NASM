@@ -1,6 +1,6 @@
 ; hello_world.asm
 ; prints hello, world! using syscall
-; Hudson Schumaker
+; Hudson Schumaker 
 ; SchumakerTeam Lab
 
 bits 64
