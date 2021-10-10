@@ -20,7 +20,7 @@ _o3sub:
   ret            ; return, rax has the subtraction value
 
 _o3mult:
-  mov	 rax, rdi  ; 1st arg, moved to rax
+  mov	rax, rdi  ; 1st arg, moved to rax
   imul rsi       ; 2sd arg, multiply rsi with rax (rdi vale)
   ret            ; return, rax has the result
 
