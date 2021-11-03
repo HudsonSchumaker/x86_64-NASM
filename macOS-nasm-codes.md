@@ -1,5 +1,5 @@
 # x86_64-NASM
-NASM Assembler codes for macOS
+NASM Assembler codes for macOS.
 
 Let's start with registers and their assignments:
 
