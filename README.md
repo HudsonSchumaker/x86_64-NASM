@@ -16,4 +16,3 @@ inc x &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	      x ← x
 dec x	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x ← x – 1  
 syscall	Invoke an operating system routine  
 db A pseudo-instruction that declares bytes that will be in memory when the program runs
-
