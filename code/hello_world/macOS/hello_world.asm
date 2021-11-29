@@ -1,4 +1,4 @@
-; hello_world.asm 
+; hello_world.asm
 ; prints hello, world! using syscall
 ; Hudson Schumaker
 ; SchumakerTeam Lab
