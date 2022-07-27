@@ -1,3 +1,5 @@
+; hello_world2
+
 %include "win32n.inc" 
 	extern WriteFile
 	extern WriteConsoleA
