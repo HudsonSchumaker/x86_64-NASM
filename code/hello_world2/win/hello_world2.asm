@@ -1,4 +1,5 @@
 ; hello_world2
+; Schumaker Team Studio
 
 %include "win32n.inc" 
 	extern WriteFile
