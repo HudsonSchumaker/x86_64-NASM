@@ -1,4 +1,6 @@
+;
 ; Hudson Schumaker
+;
 
 extern printf
 section .data							
