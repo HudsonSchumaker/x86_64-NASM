@@ -1,3 +1,4 @@
+;
 ; hello_world.asm
 ; prints hello, world! using syscall
 ; Hudson Schumaker
